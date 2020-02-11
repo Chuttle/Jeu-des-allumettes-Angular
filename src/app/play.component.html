@@ -1,0 +1,10 @@
+<h2>Joueur {{actualPlayer}} choisit le nombre d'allumettes à retirer</h2>
+<br>
+<h4>Nombre d'allumettes en jeu: {{nombreAllumettes}}</h4>
+<br>
+<button (click)="play(1)">Retirer 1 allumette</button>
+<button (click)="play(2)">Retirer 2 allumettes</button>
+<button (click)="play(3)">Retirer 3 allumettes</button>
+<br>
+<br>
+<h1 *ngIf="victory">Joueur {{actualPlayer}} gagne!</h1>
